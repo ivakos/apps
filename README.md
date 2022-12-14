@@ -1,1 +1,1 @@
-Will be some apps
+Will be some apps.
