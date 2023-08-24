@@ -7,3 +7,4 @@ https://ivakos.github.io/apps/random-jokes
 https://ivakos.github.io/apps/shelter/pages/main  
 https://ivakos.github.io/apps/songbird  
 https://ivakos.github.io/apps/tic-tac-toe  
+https://ivakos.github.io/apps/virtual-keyboard
