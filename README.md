@@ -1,9 +1,1 @@
-https://ivakos.github.io/apps/codejam  
-https://ivakos.github.io/apps/eco-sounds  
-https://ivakos.github.io/apps/museum  
-https://ivakos.github.io/apps/online-zoo  
-https://ivakos.github.io/apps/portfolio  
-https://ivakos.github.io/apps/random-jokes  
-https://ivakos.github.io/apps/shelter/pages/main  
-https://ivakos.github.io/apps/songbird  
-https://ivakos.github.io/apps/tic-tac-toe  
+

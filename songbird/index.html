@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="./assets/favicon.png" rel="icon">
+  <title>SongBird</title>
+</head>
+
+<body class="body">
+  <div class="container">
+    <header class="header">
+      <div class="header__child">
+        <div class="header__logo">
+          <img src="./assets/icons/favicon.png" alt="logo" class="header__img">
+        </div>
+        <nav class="nav">
+          <ul class="nav__ul">
+            <li class="nav__li">
+              <a href="#" class="nav__a nav__a-active" id="home">Home</a>
+            </li>
+            <li class="nav__li">
+              <a href="#" class="nav__a" id="play">Play</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__child">
+        <div class="header__score">
+          <p>Score: </p>
+          <div class="score">
+            <p>10</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div class="main__start-page">
+
+        <div class="video__wrapper">
+          <video autoplay muted loop class="main__video">
+            <source src="./assets/video/videoplayback.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+        <div class="main__wrapper">
+          <a href="#" class="main__button-start">
+            <span>Start</span>
+            <div class="liquid"></div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="main__game-page">
+
+        <div class="nav-play">
+          <ul class="nav-play__ul">
+            <li class="nav-play__li active">Разминка</li>
+            <li class="nav-play__li">Воробьиные</li>
+            <li class="nav-play__li">Лесные птицы</li>
+            <li class="nav-play__li">Певчие птицы</li>
+            <li class="nav-play__li">Хищные птицы</li>
+            <li class="nav-play__li">Морские птицы</li>
+          </ul>
+        </div>
+
+        <div class="bird-player">
+          <div class="bird-player__container">
+            <div class="bird-player__wrapper-img">
+              <img src="./assets/icons/favicon.png" alt="bird" class="bird-player__img">
+            </div>
+            <div class="bird-player__wrapper">
+              <div class="bird-player__name">
+                *****
+              </div>
+              <div class="line"></div>
+              <div class="bird-player__player">
+                <audio controls class="audio-main">
+                  <source src="" type="audio/mpeg">
+                  Тег audio не поддерживается вашим браузером.
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-field">
+          <div class="game-field__wrapper">
+            <div class="answers">
+              <ul class="answers__ul">
+                <li class="answers__li"></li>
+                <li class="answers__li"></li>
+                <li class="answers__li"></li>
+                <li class="answers__li"></li>
+                <li class="answers__li"></li>
+                <li class="answers__li"></li>
+              </ul>
+            </div>
+
+            <div class="bird-info">
+              <div class="bird-info__default">
+                <p>Послушайте плеер.</p>
+                <p>Выберите птицу из списка</p>
+              </div>
+              <div class="bird-info__type">
+                <div class="bird-info__wrapper">
+                  <div class="bird-info__wrapper-img">
+                    <img src="./assets/icons/favicon.png" alt="bird" class="bird-info__img">
+                  </div>
+                  <div class="bird-info__info">
+                    <div class="bird-info__name">Ворон
+                    </div>
+                    <div class="line"></div>
+                    <div class="bird-info__species">
+                      Corvus corax
+                    </div>
+                    <div class="line"></div>
+                    <div class="bird-info__player">
+                      <audio controls class="audio-info">
+                        <source src="" type="audio/mpeg">
+                        Тег audio не поддерживается вашим браузером.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+                <div class="bird-info__wrapper">
+                  <div class="bird-info__description">
+                    Ворон – крупная птица. Длина тела достигает 70 сантиметров, размах крыльев – до полутора метров.
+                    Вороны населяют окрестности Тауэра. В Англии бытует поверье, что в день, когда черные вороны улетят
+                    от Тауэра, монархия рухнет.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="next-level__wrapper">
+          <div class="next-level next-level_active">
+            <p>Next level</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main__wrapper">
+        <div class="main__score-page">
+          <p>Congrats!</p>
+          <p>Your score is: </p>
+          <div class="score">
+            <p>asd</p>
+          </div>
+          <div class="btn-go-again">
+            <p>Go again?</p>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__github">
+        <a href="https://github.com/ivakos" class="github__a">
+          <img src="./assets/icons/GitHub.png" alt="GitHub" class="github__img">
+        </a>
+      </div>
+      <div class="footer__year">
+        <p>2022</p>
+      </div>
+      <div class="footer__school">
+        <a href="https://rs.school/js/" class="school_a">
+          <img src="./assets/icons/rs_school_js.svg" alt="GitHub" class="school__img">
+        </a>
+      </div>
+    </footer>
+
+
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
