@@ -2,205 +2,344 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shelter</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../normilize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Shelter</title>
+  <link rel="icon" href="../../assets/icons8-dog-heart-32.png">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header_container container">
-            <a href="index.html">
-                <h1>Cozy House</h1>
-                <p>Shelter for pets in Boston</p>
-            </a>
-            <button class="burger">
-                <span class="line"></span>
-            </button>
-            <nav class="header_nav">
-                <a href="index.html" class="burger_icon">
-                    <h1>Cozy House</h1>
-                    <p>Shelter for pets in Boston</p>
-                </a>
-                <ul class="header_list">
-                    <li class="header_item">
-                        <a href="#" class="header_link nav_active">About the shelter</a>
-                    </li>
-                    <li class="header_item">
-                        <a href="../pets/index.html" class="header_link">Our pets</a>
-                    </li>
-                    <li class="header_item">
-                        <a href="#help" class="header_link">Help the shelter</a>
-                    </li>
-                    <li class="header_item">
-                        <a href="#footer_id" class="header_link">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
+  <div class="body flex flex-column " id="start">
+    <header>
+      <div class="container header flex">
+        <div class="header__logo">
+          <a href="#">
+            <h1 class="title">
+              Cozy House
+            </h1>
+            <h5 class="subtitle">
+              Shelter for pets in Boston
+            </h5>
+          </a>
         </div>
+        <nav class="nav flex">
+          <ul class="nav__ul flex">
+            <li class="nav__li"><a href="#" class="nav__a active transition">About the shelter</a></li>
+            <li class="nav__li"><a href="../our_pets/index.html" class="nav__a transition">Our pets</a></li>
+            <li class="nav__li"><a href="#help" class="nav__a transition">Help the shelter</a></li>
+            <li class="nav__li"><a href="#footer" class="nav__a transition">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
+      </div>
     </header>
 
-    <main>
-        <section class="frame1">
-            <div class="frame1_container container">
-                <div class="frame1_txt">
-                    <h2>Not only people <br> need a house</h2>
-                    <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or
-                        she will love you more than anybody else in the world, you will see!</p>
-                    <a class="btn_a" href="#our_friend">Make a friend</a>
-                </div>
-                <picture class="frame1_pic">
-                    <img class="frame1_img" src="../../assets/images/start-screen-puppy.png" width="698" height="728"
-                        alt="Puppy">
-                </picture>
-            </div>
-        </section>
-        <section class="frame2">
-            <div class="frame2_container container">
-                <picture class="frame2_pic">
-                    <img src="../../assets/images/about-pets.png" width="300" height="408" alt="about_pets">
-                </picture>
-                <div class="frame2_txt">
-                    <h2>About the shelter “Cozy House”</h2>
-                    <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them
-                        will find a family. The others will continue to live with us and will be waiting for a lucky
-                        chance to become dearly loved.</p>
-                    <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable
-                        (including psychologically) and well. We are supported by 87 volunteers and 28 employees of
-                        various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of
-                        the animals, they become attached to the pets and would hardly ever leave them alone.</p>
-                </div>
-            </div>
-        </section>
+    <main class="main">
 
-        <section class="frame3" id="our_friend">
-            <div class="frame3_container container">
-                <h2>Our friends who <br> are looking for a house</h2>
-                <div class="sec3_flex">
-                    <button class="left">
-                        <img src="../../assets/icons/Arrow_left.svg" alt="left">
-                    </button>
-                    <div class="sec3_flex_parent">
-                        <div class="sec3_child">
-                            <img src="../../assets/images/pets-katrine.png" alt="katrine">
-                            <h3>Katrine</h3>
-                            <button>Learn more</button>
-                        </div>
-                        <div class="sec3_child">
-                            <img src="../../assets/images/pets-jennifer.png" alt="jenifer">
-                            <h3>Jennifer</h3>
-                            <button>Learn more</button>
-                        </div>
-                        <div class="sec3_child">
-                            <img src="../../assets/images/pets-woody.png" alt="woody">
-                            <h3>Woody</h3>
-                            <button>Learn more</button>
-                        </div>
-                    </div>
-                    <button class="right">
-                        <img src="../../assets/icons/Arrow_right.svg" alt="right">
-                    </button>
-                </div>
-                <a class="btn_a" href="../pets/index.html">Get to know the rest</a>
-            </div>
-        </section>
+      <section>
+        <div class="container frame1 flex">
+          <div class="frame1__info flex flex-column">
+            <h2 class="frame1__h2">Not only people <br> need a house</h2>
+            <h6 class="frame1__text">We offer to give a chance to a little
+              and nice puppy with an extremely wide and open heart.
+              He or she will love you more than anybody else in the
+              world, you will see!</h6>
+            <form class="frame1__form flex" action="#make_a_friend">
+              <button class="classic__btn transition">Make a friend</button>
+            </form>
+          </div>
+          <figure class="frame1__figure">
+            <img class="frame1__img img-frame" src="../../assets/images/start-screen-puppy.png" alt="dog">
+          </figure>
+        </div>
+      </section>
 
-        <section class="frame4" id="help">
-            <div class="frame4_container container">
-                <h2>How you can help <br>
-                    our shelter</h2>
-                <div class="sec4_box">
-                    <div class="sec4_box_child">
-                        <img src="../../assets/icons/icon-pet-food.svg" alt="icon-pet-food">
-                        <h4>Pet food</h4>
-                    </div>
-                    <div class="sec4_box_child">
-                        <img src="../../assets/icons/icon-transportation.svg" alt="icon-transportation">
-                        <h4>Transportation</h4>
-                    </div>
-                    <div class="sec4_box_child">
-                        <img src="../../assets/icons/icon-toys.svg" alt="icon-toys">
-                        <h4>Toys</h4>
-                    </div>
-                    <div class="sec4_box_child">
-                        <img src="../../assets/icons/icon-bowls-and-cups.svg" alt="icon-bowls-and-cups">
-                        <h4>Bowls and cups</h4>
-                    </div>
-                    <div class="sec4_box_child">
-                        <img src="../../assets/icons/icon-shampoos.svg" alt="icon-shampoos">
-                        <h4>Shampoos</h4>
-                    </div>
-                    <div class="sec4_box_child">
-                        <img src="../../assets/icons/icon-vitamins.svg" alt="icon-vitamins">
-                        <h4>Vitamins</h4>
-                    </div>
-                    <div class="sec4_box_child">
-                        <img src="../../assets/icons/icon-medicines.svg" alt="icon-medicines">
-                        <h4>Medicines</h4>
-                    </div>
-                    <div class="sec4_box_child">
-                        <img src="../../assets/icons/icon-collars-leashes.svg" alt="icon-collars-leashes">
-                        <h4>Collars / leashes</h4>
-                    </div>
-                    <div class="sec4_box_child">
-                        <img src="../../assets/icons/icon-sleeping-area.svg" alt="icon-sleeping-area">
-                        <h4>Sleeping areas</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="section__bg-color-white">
+        <div class="container frame2 flex frame-padding">
+          <figure class="frame2__figure">
+            <img src="../../assets/images/about-pets.png" alt="cat and dog" class="frame2__img img-frame">
+          </figure>
+          <div class="frame2__info flex flex-column">
+            <h3 class="h3 frame2__h3">About the shelter <br> “Cozy House”</h3>
+            <p class="frame2__p">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20%
+              of them will find a family. The others will continue to live with us and will be waiting for a lucky
+              chance to become dearly loved.</p>
+            <p class="frame2__p">We feed our wards with the best food and make sure that they do not get sick, feel
+              comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of
+              various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals,
+              they become attached to the pets and would hardly ever leave them alone.</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="section__bg-color-grey" id="make_a_friend">
+        <div class="container frame3 flex flex-column frame-padding">
+          <h3 class="h3 frame3__h3">Our friends who <br>
+            are looking for a house</h3>
+          <div class="frame3__wrapper flex">
 
-        <section class="frame5">
-            <div class="frame5_container container">
-                <picture class="frame5_pic">
-                    <img src="../../assets/images/donation-dog.png" width="505" height="261" alt="donation-dog">
-                </picture>
-                <div class="frame5_txt">
-                    <h2>You can also <br> make a donation</h2>
-                    <h5>Name of the bank / Type of bank account</h5>
-                    <a href="#" class="credit_card btn_a">8380 2880 8028 8791 7435</a>
-                    <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum
-                        at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
-                        Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                </div>
+            <div class=" noselect carusel__left-arrow carusel__arrow transition" id="btn-left">
+              <img src="../../assets/icons/Arrow_left.png" alt="arrow left">
             </div>
-        </section>
+
+            <div class="card__wrapper">
+
+              <div class="carousel flex" id="carousel">
+
+                <div class="popup__wrapper">
+                  <div class="popup">
+                    <div class="quitIcon">
+                      <figure class="quitIcon__figure">
+                        <img src="../../assets/icons/quit.png" alt="quit" class="quitIcon__img">
+                      </figure>
+                    </div>
+                    <figure class="popup__figure">
+                      <img src="#" alt="popup image" class="popup__img">
+                    </figure>
+                    <div class="popup__info">
+                      <p class="popup__title"></p>
+                      <p class="popup__type"><span class="pets_type"></span> - <span class="pets_breed"></span></p>
+                      <p class="popup__description"></p>
+                      <ul class="popup__ul">
+                        <li class="popup__li">Age: <span class="description__age"></span></li>
+                        <li class="popup__li">Inoculations: <span class="inoculations"></span></li>
+                        <li class="popup__li">Diseases: <span class="diseases"></span></li>
+                        <li class="popup__li">Parasites: <span class="parasites"></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card__container flex" id="item-left">
+                  <div class="card transition flex flex-column">
+                    <figure class="card__figure">
+                      <img class="card__img" src="#" alt="card">
+                    </figure>
+                    <h4 class="card__h4">a
+                    </h4>
+                    <form class="card__form" action="#">
+                      <button class="card__btn transition">Learn more</button>
+                    </form>
+                  </div>
+                  <div class="card transition flex flex-column">
+                    <figure class="card__figure">
+                      <img class="card__img" src="#" alt="card">
+                    </figure>
+                    <h4 class="card__h4">a
+                    </h4>
+                    <form class="card__form" action="#">
+                      <button class="card__btn transition">Learn more</button>
+                    </form>
+                  </div>
+                  <div class="card transition flex flex-column">
+                    <figure class="card__figure">
+                      <img class="card__img" src="#" alt="card">
+                    </figure>
+                    <h4 class="card__h4">a
+                    </h4>
+                    <form class="card__form" action="#">
+                      <button class="card__btn transition">Learn more</button>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="card__container flex" id="item-active">
+                  <div class="card transition flex flex-column">
+                    <figure class="card__figure">
+                      <img class="card__img" src="#" alt="card">
+                    </figure>
+                    <h4 class="card__h4">a
+                    </h4>
+                    <form class="card__form" action="#">
+                      <button class="card__btn transition">Learn more</button>
+                    </form>
+                  </div>
+                  <div class="card transition flex flex-column">
+                    <figure class="card__figure">
+                      <img class="card__img" src="#" alt="card">
+                    </figure>
+                    <h4 class="card__h4">a
+                    </h4>
+                    <form class="card__form" action="#">
+                      <button class="card__btn transition">Learn more</button>
+                    </form>
+                  </div>
+                  <div class="card transition flex flex-column">
+                    <figure class="card__figure">
+                      <img class="card__img" src="#" alt="card">
+                    </figure>
+                    <h4 class="card__h4">a
+                    </h4>
+                    <form class="card__form" action="#">
+                      <button class="card__btn transition">Learn more</button>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="card__container flex" id="item-right">
+                  <div class="card transition flex flex-column">
+                    <figure class="card__figure">
+                      <img class="card__img" src="#" alt="card">
+                    </figure>
+                    <h4 class="card__h4">a
+                    </h4>
+                    <form class="card__form" action="#">
+                      <button class="card__btn transition">Learn more</button>
+                    </form>
+                  </div>
+                  <div class="card transition flex flex-column">
+                    <figure class="card__figure">
+                      <img class="card__img" src="#" alt="card">
+                    </figure>
+                    <h4 class="card__h4">a
+                    </h4>
+                    <form class="card__form" action="#">
+                      <button class="card__btn transition">Learn more</button>
+                    </form>
+                  </div>
+                  <div class="card transition flex flex-column">
+                    <figure class="card__figure">
+                      <img class="card__img" src="#" alt="card">
+                    </figure>
+                    <h4 class="card__h4">a
+                    </h4>
+                    <form class="card__form" action="#">
+                      <button class="card__btn transition">Learn more</button>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="noselect carusel__right-arrow carusel__arrow transition" id="btn-right">
+              <img src="../../assets/icons/Arrow_right.png" alt="arrow right">
+            </div>
+
+          </div>
+          <form class="card__form" action="../our_pets/index.html">
+            <button class="classic__btn transition">Get to know the rest</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section__bg-color-white" id="help">
+        <div class="container frame4 flex flex-column frame-padding">
+          <h3 class="h3 frame4__h3">How you can help <br>
+            our shelter</h3>
+          <div class="help__container flex">
+            <div class="help__card flex flex-column">
+              <img class="help__img" src="../../assets/images/help/icon-pet-food.png" alt="help card">
+              <h4 class="help-card__h4">Pet food</h4>
+            </div>
+            <div class="help__card flex flex-column">
+              <img class="help__img" src="../../assets/images/help/icon-transportation.png" alt="help card">
+              <h4 class="help-card__h4">Transportation</h4>
+            </div>
+            <div class="help__card flex flex-column">
+              <img class="help__img" src="../../assets/images/help/icon-toys.png" alt="help card">
+              <h4 class="help-card__h4">Toys</h4>
+            </div>
+            <div class="help__card flex flex-column">
+              <img class="help__img" src="../../assets/images/help/icon-bowls-and-cups.png" alt="help card">
+              <h4 class="help-card__h4">Bowls and cups</h4>
+            </div>
+            <div class="help__card flex flex-column">
+              <img class="help__img" src="../../assets/images/help/icon-shampoos.png" alt="help card">
+              <h4 class="help-card__h4">Shampoos</h4>
+            </div>
+            <div class="help__card flex flex-column">
+              <img class="help__img" src="../../assets/images/help/icon-vitamins.png" alt="help card">
+              <h4 class="help-card__h4">Vitamins</h4>
+            </div>
+            <div class="help__card flex flex-column">
+              <img class="help__img" src="../../assets/images/help/icon-medicines.png" alt="help card">
+              <h4 class="help-card__h4">Medicines</h4>
+            </div>
+            <div class="help__card flex flex-column">
+              <img class="help__img" src="../../assets/images/help/icon-collars-leashes.png" alt="help card">
+              <h4 class="help-card__h4">Collars / leashes</h4>
+            </div>
+            <div class="help__card flex flex-column">
+              <img class="help__img" src="../../assets/images/help/icon-sleeping-area.png" alt="help card">
+              <h4 class="help-card__h4">Sleeping areas</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__bg-color-grey">
+        <div class="container frame5 flex frame-padding">
+          <figure class="frame5__figure">
+            <img src="../../assets/images/donation-dog.png" alt="dog" class="frame5__img img-frame">
+          </figure>
+          <div class="frame5__info flex flex-column">
+            <h3 class="h3 frame5__h3">You can also <br> make a donation</h3>
+            <p class="card__bank">Name of the bank / Type of bank account</p>
+            <a href="#" class="card__info flex transition">
+              <img src="../../assets/icons/credit-card.png" alt="card" class="card__info_img">
+              <p class="card__info_number">8380 2880 8028 8791 7435</p>
+            </a>
+            <p class="card__annotation">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+          </div>
+        </div>
+      </section>
 
     </main>
 
-    <footer id="footer_id">
-        <div class="footer_container container">
-            <div class="footer_child">
-                <h2>For questions and suggestions</h2>
-                <a href="mailto:email@shelter.com" class="footer_text">
-                    <img src="../../assets/icons/icon-email.svg" alt="icon-email">
-                    email@shelter.com
-                </a>
-                <a href="tel:+136745677554" class="footer_text">
-                    <img src="../../assets/icons/icon-phone.svg" alt="icon-phone">
-                    +13 674 567 75 54
-                </a>
-            </div>
-            <div class="footer_child map">
-                <h2>We are waiting for your visit</h2>
-                <a href="https://goo.gl/maps/x1eFZLbNE9wkzN6Z7" target="_blank" class="footer_text">
-                    <img src="../../assets/icons/icon-marker.svg" alt="icon-marker">
-                    1 Central Street, Boston <br>(entrance from the store)
-                </a>
-                <a href="https://goo.gl/maps/FT4kHTUHHfmxsEsZ8" target="_blank" class="footer_text">
-                    <img src="../../assets/icons/icon-marker.svg" alt="icon-marker">
-                    18 South Park, London
-                </a>
-            </div>
-            <div class="footer_child">
-                <img src="../../assets/images/footer-puppy.png" alt="footer-puppy">
-            </div>
+    <footer id="footer">
+
+      <div class="container footer flex">
+        <div class="footer__child flex flex-column">
+          <h2 class="frame1__h2 footer__h2">For questions and suggestions</h2>
+          <a href="mailto:email@shelter.com" class="footer__a flex transition">
+            <img src="../../assets/icons/icon-email.png" alt="mail" class="footer__a_img transition">
+            <p>email@shelter.com</p>
+          </a>
+          <a href="tel:+136745677554" class="footer__a flex transition">
+            <img src="../../assets/icons/icon-phone.png" alt="phone" class="footer__a_img transition">
+            <p>+13 674 567 75 54</p>
+          </a>
         </div>
+        <div class="footer__child flex flex-column">
+          <h2 class="frame1__h2 footer__h2">We are waiting for your visit</h2>
+          <a href="https://www.google.com/maps?q=1+Central+Street,+Boston&rlz=1C1GCEA_enBY1036BY1036&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj_i-Xa-fz9AhXL_7sIHXpNAOQQ_AUoAXoECAEQAw"
+            class="footer__a flex transition" target="_blank">
+            <img src="../../assets/icons/icon-marker.png" alt="map" class="footer__a_img transition">
+            <p>1 Central Street, Boston (entrance from the store)</p>
+
+          </a>
+          <a href="https://www.google.com/maps/search/18+South+Park,+London/@51.5139951,-0.2812199,11z/data=!3m1!4b1"
+            class="footer__a flex transition" target="_blank">
+            <img src="../../assets/icons/icon-marker.png" alt="map" class="footer__a_img transition">
+            <p>18 South Park, London </p>
+
+          </a>
+        </div>
+        <figure class="footer__figure">
+          <img src="../../assets/images/footer-puppy.png" alt="dog" class="footer__img img-frame">
+        </figure>
+      </div>
+
     </footer>
-    <script src="../main/script.js"></script>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module" src="carousel.js"></script>
+  <script type="module" src="popup.js"></script>
+  <script src="../burgerMenu.js"></script>
+
 </body>
 
 </html>
