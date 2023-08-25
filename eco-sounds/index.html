@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco sounds</title>
+    <link href="style.css" rel="stylesheet">
+    <link type="image/x-icon" href="./assets/favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="./assets/favicon.ico" rel="icon">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header_container">
+            <img src="./assets/svg/logo.svg" alt="logo" class="logo_img active nav_child" data-song="forest">
+            <nav>
+                <ul class="nav_parent">
+                    <li class="nav_child" data-song = "solovey">Соловей</li>
+                    <li class="nav_child" data-song = "drozd">Дрозд</li>
+                    <li class="nav_child" data-song = "zarynka">Малиновка</li>
+                    <li class="nav_child" data-song = "javoronok">Жаворонок</li>
+                    <li class="nav_child" data-song = "slavka">Славка</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <main class="main">
+        <button class="player"></button>
+        <audio src="./assets/audio/forest.mp3"></audio>
+    </main>
+
+    <footer class="footer">
+        <div class="header_container">
+            <div class="footer_icons">
+                <p>©</p>
+                <p>2020</p>
+                <a href="https://github.com/ivakos" class="github_link">github</a>
+            </div>
+            <a href="https://rs.school/js-stage0/">
+                <img src="./assets/svg/rss.svg" alt="rsschool link" class="img_rsschool">
+            </a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
