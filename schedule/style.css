@@ -90,6 +90,8 @@ html {
 
 .day_of_the_week {
   text-decoration: underline;
+  color: var(--text-color-brown);
+  font-weight: 800;
 }
 
 .schedule_title {
@@ -124,4 +126,10 @@ html {
   display: flex;
   justify-content: center;
   width: 60px;
+}
+
+.compliment {
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
 }

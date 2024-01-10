@@ -4,7 +4,30 @@ const container = document.querySelector('.container');
 
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
-init();
+
+const compliment = document.createElement('h2');
+compliment.className = 'compliment';
+container.append(compliment);
+
+const thanksBtn = document.createElement('div');
+thanksBtn.className = 'thanks_btn btn';
+thanksBtn.innerHTML = 'Thank You!&#128536;'
+container.append(thanksBtn);
+
+const url = 'https://tools-api.robolatoriya.com/compliment?type=2';
+
+async function getData() {
+  const res = await fetch(url);
+  const data = await res.json();
+  compliment.innerHTML = data.text;
+}
+window.addEventListener('load', getData);
+
+thanksBtn.addEventListener('click', () => {
+  compliment.remove();
+  thanksBtn.remove();
+  init();
+});
 
 function init() {
   const title = document.createElement('h1');
@@ -35,7 +58,6 @@ function init() {
     day.addEventListener('click', () => {
       title.remove();
       selectDiv.remove();
-      goBack()
       createDay(idx);
       goBack();
     });
