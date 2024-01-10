@@ -69,87 +69,87 @@ const firstShift = [
 
 const secondShift = [
   {//Monday 
-  1: {
-    'class': 'факул.',
-    'classroom': 'кл.',
+    1: {
+      'class': 'факул.',
+      'classroom': 'кл.',
+    },
+    2: {
+      'class': '6Б',
+      'classroom': '65',
+    },
+    3: {
+      'class': '3Г',
+      'classroom': 'кл.',
+    },
   },
-  2: {
-    'class': '6Б',
-    'classroom': '65',
+  {//Tuesday
+    1: {
+      'class': '3Г',
+      'classroom': 'кл.',
+    },
+    2: {
+      'class': '3А',
+      'classroom': 'кл.',
+    },
+    3: {
+      'class': '6А',
+      'classroom': '47',
+    },
+    5: {
+      'class': '3Б',
+      'classroom': '65',
+    },
   },
-  3: {
-    'class': '3Г',
-    'classroom': 'кл.',
+  {//Wednesday
+    1: {
+      'class': '3А',
+      'classroom': 'кл.',
+    },
+    3: {
+      'class': '3В',
+      'classroom': 'кл.',
+    },
+    4: {
+      'class': '6Б',
+      'classroom': '65',
+    },
   },
-},
-{//Tuesday
-  1: {
-    'class': '3Г',
-    'classroom': 'кл.',
+  {//Thursday
+    1: {
+      'class': '3А',
+      'classroom': '58',
+    },
+    2: {
+      'class': '3В',
+      'classroom': 'кл.',
+    },
+    3: {
+      'class': '6А',
+      'classroom': '65',
+    },
+    4: {
+      'class': '3Б',
+      'classroom': '65',
+    },
+    5: {
+      'class': '3Г',
+      'classroom': 'кл.',
+    },
   },
-  2: {
-    'class': '3А',
-    'classroom': 'кл.',
+  {//Friday
+    1: {
+      'class': '6А',
+      'classroom': '65',
+    },
+    2: {
+      'class': '6Б',
+      'classroom': '64',
+    },
+    3: {
+      'class': '3В',
+      'classroom': 'кл.',
+    },
   },
-  3: {
-    'class': '6А',
-    'classroom': '47',
-  },
-  5: {
-    'class': '3Б',
-    'classroom': '65',
-  },
-},
-{//Wednesday
-  1: {
-    'class': '3А',
-    'classroom': 'кл.',
-  },
-  3: {
-    'class': '3В',
-    'classroom': 'кл.',
-  },
-  4: {
-    'class': '6Б',
-    'classroom': '65',
-  },
-},
-{//Thursday
-  1: {
-    'class': '3А',
-    'classroom': '58',
-  },
-  2: {
-    'class': '3В',
-    'classroom': 'кл.',
-  },
-  3: {
-    'class': '6А',
-    'classroom': '65',
-  },
-  4: {
-    'class': '3Б',
-    'classroom': '65',
-  },
-  5: {
-    'class': '3Г',
-    'classroom': 'кл.',
-  },
-},
-{//Friday
-  1: {
-    'class': '6А',
-    'classroom': '65',
-  },
-  2: {
-    'class': '6Б',
-    'classroom': '64',
-  },
-  3: {
-    'class': '3В',
-    'classroom': 'кл.',
-  },
-},
 ];
 
 export { timeSchedule, firstShift, secondShift };

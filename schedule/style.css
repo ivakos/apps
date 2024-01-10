@@ -55,7 +55,7 @@ html {
   gap: 20px;
 }
 
-.day:active, .thanks_btn:active, .go_back_btn{
+.day:active, .thanks_btn:active, .go_back_btn {
   background-color: var(--text-color-red);
   border-color: var(--text-color-red);
   color: var(--text-color-light);
@@ -68,6 +68,10 @@ html {
   border: 1px solid var(--text-color-red);
   border-radius: 30px;
   justify-content: center;
+
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
 }
 
 .go_back_btn:active {
