@@ -79,14 +79,14 @@ function createDay(dayIdx) {
   firstTitle.className = 'schedule_title';
   daySchedule.append(firstTitle);
 
-  createShift(firstShift, timeSchedule[0]);
+  createShift(firstShift, timeSchedule.firstShift);
 
   const secondTitle = document.createElement('h2');
   secondTitle.innerHTML = 'Second shift';
   secondTitle.className = 'schedule_title';
   daySchedule.append(secondTitle);
 
-  createShift(secondShift, timeSchedule[1]);
+  createShift(secondShift, timeSchedule.secondShift);
 
   function createShift(shift, shiftTime) {
     const dayCurrent = shift[dayIdx];
