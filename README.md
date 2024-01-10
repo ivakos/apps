@@ -9,3 +9,4 @@ https://ivakos.github.io/apps/songbird
 https://ivakos.github.io/apps/tic-tac-toe  
 https://ivakos.github.io/apps/virtual-keyboard  
 https://ivakos.github.io/apps/minesweeper  
+https://ivakos.github.io/apps/schedule
