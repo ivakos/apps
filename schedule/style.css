@@ -25,15 +25,13 @@ html {
   background-color: var(--text-color-light);
   align-items: center;
   justify-content: center;
-  z-index: 0;
   background-image: url('./bg.jpg');
-  background-size: 25%;
+  background-size: 45%;
 }
 
 .container {
   position: relative;
-  z-index: 99;
-  max-width: 340px;
+  width: 360px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.576);
   padding: 10px;
@@ -56,11 +54,17 @@ html {
   gap: 20px;
 }
 
+.day:active {
+  background-color: var(--text-color-red);
+  border-color: var(--text-color-red);
+  color: var(--text-color-light);
+}
+
 .btn {
   display: flex;
   width: 250px;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid var(--text-color-red);
   border-radius: 30px;
   justify-content: center;
 }
@@ -69,6 +73,12 @@ html {
   background-color: var(--text-color-red);
   border-color: var(--text-color-red);
   color: var(--text-color-light);
+}
+
+.go_back_btn:active {
+  background-color: var(--text-color-caramel);
+  border-color: var(--text-color-caramel);
+  color: var(--text-color-red);
 }
 
 /* ------------------------------------------------ */
@@ -107,7 +117,7 @@ html {
 .time {
   display: flex;
   justify-content: center;
-  width: 90px;
+  width: 100px;
 }
 
 .group, .classroom {
