@@ -85,15 +85,15 @@ const secondShift = [
   {//Tuesday
     1: {
       'class': '3Г',
-      'classroom': 'кл.',
+      'classroom': '65',
     },
     2: {
       'class': '3А',
-      'classroom': 'кл.',
+      'classroom': '65',
     },
     3: {
       'class': '6А',
-      'classroom': '47',
+      'classroom': '65',
     },
     5: {
       'class': '3Б',
@@ -107,7 +107,7 @@ const secondShift = [
     },
     3: {
       'class': '3В',
-      'classroom': 'кл.',
+      'classroom': '65',
     },
     4: {
       'class': '6Б',
@@ -121,7 +121,7 @@ const secondShift = [
     },
     2: {
       'class': '3В',
-      'classroom': 'кл.',
+      'classroom': '65',
     },
     3: {
       'class': '6А',
@@ -133,7 +133,7 @@ const secondShift = [
     },
     5: {
       'class': '3Г',
-      'classroom': 'кл.',
+      'classroom': '65',
     },
   },
   {//Friday
@@ -147,7 +147,7 @@ const secondShift = [
     },
     3: {
       'class': '3В',
-      'classroom': 'кл.',
+      'classroom': '65',
     },
   },
 ];
