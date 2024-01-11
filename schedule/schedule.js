@@ -117,7 +117,7 @@ const secondShift = [
   {//Thursday
     1: {
       'class': '3А',
-      'classroom': '58',
+      'classroom': '65',
     },
     2: {
       'class': '3В',
