@@ -2,8 +2,7 @@ import { timeSchedule, firstShift, secondShift } from './schedule.js';
 
 const container = document.querySelector('.container');
 
-const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 const compliment = document.createElement('h2');
 compliment.className = 'compliment';
@@ -39,8 +38,6 @@ function init() {
   selectDiv.className = 'select_day flex';
   container.append(selectDiv);
 
-  const daysNodes = [];
-
   for (let i = 0; i < days.length; i++) {
     const day = document.createElement('div');
     day.className = 'day btn';
@@ -50,15 +47,17 @@ function init() {
     dayTitle.className = 'day_title';
     dayTitle.innerHTML = `${days[i]}`;
     day.append(dayTitle);
-
-    daysNodes.push(day);
   }
 
   document.querySelectorAll('.day').forEach((day, idx) => {
     day.addEventListener('click', () => {
       title.remove();
       selectDiv.remove();
-      createDay(idx);
+      if (idx < 5) {
+        createDay(idx);
+      } else {
+        createSaturday(idx);
+      }
       goBack();
     });
   });
@@ -128,6 +127,40 @@ function createDay(dayIdx) {
   }
 }
 
+function createSaturday(dayIdx) {
+  const daySchedule = document.createElement('div');
+  daySchedule.className = 'day_schedule flex';
+  container.append(daySchedule);
+
+  const dayOfTheWeek = document.createElement('h1');
+  dayOfTheWeek.className = 'day_of_the_week flex';
+  dayOfTheWeek.innerHTML = `${days[dayIdx]}`;
+  daySchedule.append(dayOfTheWeek);
+
+  const dayCurrent = firstShift[dayIdx];
+
+  for (let i = 0; i < 9; i++) {
+    const row = document.createElement('div');
+    row.className = 'row';
+    daySchedule.append(row);
+
+    const data = document.createElement('p');
+    data.className = 'data';
+    data.innerHTML = `${dayCurrent[i].data}`;
+    row.append(data);
+
+    const time = document.createElement('p');
+    time.className = 'time';
+    time.innerHTML = `${timeSchedule.firstShift[1]}`
+    row.append(time);
+
+    const group = document.createElement('p');
+    group.innerHTML = `${dayCurrent[i].class}`;
+    group.className = 'group';
+    row.append(group);
+  };
+}
+
 function goBack() {
   const goBackBtn = document.createElement('p');
   goBackBtn.className = 'go_back_btn btn';
@@ -136,7 +169,7 @@ function goBack() {
 
   goBackBtn.addEventListener('click', () => {
     document.querySelector('.day_schedule').remove();
-    document.querySelectorAll('.go_back_btn').forEach((el) => el.remove());
+    goBackBtn.remove();
     init();
   });
 }
