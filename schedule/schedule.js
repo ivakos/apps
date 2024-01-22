@@ -40,6 +40,10 @@ const firstShift = [
       'class': '9Д',
       'classroom': '69',
     },
+    6: {
+      'class': '3Г',
+      'classroom': 'кл.',
+    },
   },
   {//Thursday
     3: {
@@ -164,10 +168,6 @@ const secondShift = [
     4: {
       'class': '3Б',
       'classroom': '65',
-    },
-    5: {
-      'class': '3Г',
-      'classroom': 'кл.',
     },
   },
   {//Friday
