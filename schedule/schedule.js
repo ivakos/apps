@@ -95,7 +95,7 @@ const firstShift = [
       'class': '6 класс',
     },
     7: {
-      'data': '11 мая',
+      'data': '4 мая',
       'class': '9 класс',
     },
     8: {
