@@ -1,4 +1,4 @@
-import dataPets from '../pets.json' assert { type: 'json' }
+import dataPets from '../pets.json' with { type: 'json' }
 import scanCards from './popup.js';
 
 const DBL_BTN_LEFT = document.querySelector(".button__left-twice");

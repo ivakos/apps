@@ -1,4 +1,4 @@
-import dataPets from '../pets.json' assert { type: 'json' }
+import dataPets from '../pets.json' with { type: 'json' }
 export default scanCards;
 
 function scanCards() {
