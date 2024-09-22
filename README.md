@@ -9,7 +9,4 @@ https://ivakos.github.io/apps/songbird
 https://ivakos.github.io/apps/tic-tac-toe  
 https://ivakos.github.io/apps/virtual-keyboard  
 https://ivakos.github.io/apps/minesweeper  
-<<<<<<< HEAD
 https://ivakos.github.io/apps/schedule
-=======
->>>>>>> parent of 545415b (Updates)
